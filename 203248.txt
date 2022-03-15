@@ -1,0 +1,134 @@
+4.
+git clone https://github.com/DejanFilip/SI_2022_lab1_203248.git
+5.
+git add . 
+git commit -m "Add 5 items to the shopping list"
+6.
+git add .
+git commit -m "Add quantities to the items"
+7.
+git branch branch1
+git branch branch2
+8.
+$ git log
+commit bae0489d780ad97efde0c759e84c3ab7b3c4bd15 (HEAD -> master, branch2, branch1)
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:35:44 2022 +0100
+
+    Add quantities to the items
+
+commit 4115b8f9a661506014ab700c5b0541b7f1c0e33a
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:33:45 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit f9d2a9865d490cab21523b57cd1bceed0330d01a (origin/master, origin/HEAD)
+Author: DejanFilip <100425624+DejanFilip@users.noreply.github.com>
+Date:   Tue Mar 15 13:07:23 2022 +0100
+
+    Update README.md
+
+commit dab46e8d8251b91193eb0bedd22a40ef1f10fe19
+Author: DejanFilip <100425624+DejanFilip@users.noreply.github.com>
+Date:   Tue Mar 15 13:05:51 2022 +0100
+
+    Initial commit
+9.
+git push --all origin
+10.
+git checkout branch1
+11.
+git add .
+git commit -m "Change quantity of item #5"
+12.
+git checkout master
+13.
+git add .
+git commit -m "Change quantity of item #2"
+14.
+git push --all origin
+15.
+git checkout branch2
+16.
+git add .
+git commit -m "Modify item #4"
+17.
+$ git log
+commit 035dfa7e475177f65c215f007db1da1078b3f5ac (HEAD -> branch2)
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:43:47 2022 +0100
+
+    Modify item #4
+
+commit bae0489d780ad97efde0c759e84c3ab7b3c4bd15 (origin/branch2)
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:35:44 2022 +0100
+
+    Add quantities to the items
+
+commit 4115b8f9a661506014ab700c5b0541b7f1c0e33a
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:33:45 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit f9d2a9865d490cab21523b57cd1bceed0330d01a
+Author: DejanFilip <100425624+DejanFilip@users.noreply.github.com>
+Date:   Tue Mar 15 13:07:23 2022 +0100
+
+    Update README.md
+
+18.
+git add .
+git commit --amend -m "Modify item #4 and add item #6"
+19.
+$ git log
+commit 40469110bd083c1d12a6bffb8e6dc686cbf48f7f (HEAD -> branch2)
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:43:47 2022 +0100
+
+    Modify item#4 and add item #6
+
+commit bae0489d780ad97efde0c759e84c3ab7b3c4bd15 (origin/branch2)
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:35:44 2022 +0100
+
+    Add quantities to the items
+
+commit 4115b8f9a661506014ab700c5b0541b7f1c0e33a
+Author: Stefan Nikolov <stefannikla1337@gmail.com>
+Date:   Tue Mar 15 13:33:45 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit f9d2a9865d490cab21523b57cd1bceed0330d01a
+Author: DejanFilip <100425624+DejanFilip@users.noreply.github.com>
+Date:   Tue Mar 15 13:07:23 2022 +0100
+
+    Update README.md
+20.
+git checkout master
+git merge branch1
+21.
+git merge branch2
+*Се појави конфликт меѓу branch1 и branch2,така што отидов во 
+текст едиторот и ги прифатив промените кои доаѓаат од branch2 а
+ги избришав промените што беа во branch1.
+Merge-ot го завршив со следните команди:
+git add .
+git commit -m "Merge branch 'branch2'"
+22.
+git add .
+git commit -m "Add docs"
+23.
+git push --all origin
+
+
+
+
+
+
+
+
+
